@@ -186,24 +186,24 @@ footer {
 .post-card {
   display: flex;
   flex-direction: row;
-  background-color: green;
-  border: 5px solid #f5f5f6;
   border-bottom: 5px solid #3D70D5;
 }
 
 .post-img {
-    height: 30vh;
+    max-width: 25%;
+    max-height: 100%;
 }
 
 .post-text {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  padding: 1em;
+  justify-content: space-between;
+  max-height: 100%;
+  padding: 20px 1em;
 }
 
 .post-title {
-  font-size: 2em;
+  font-size: 26px;
   padding: 0;
   margin:0;
   text-align: left;
@@ -215,6 +215,24 @@ footer {
 }
 
 /* MOBILE-ONLY CHANGES */
+
+@media only screen and (max-width: 900px) {
+
+  .post-card {
+    flex-direction: column;
+  }
+
+  .post-img {
+    max-width: 50%;
+  }
+
+  .post-title {
+    font-size: 1.5em;
+  }
+
+
+}
+
 
 @media only screen and (max-width: 500px) {
 
@@ -234,8 +252,10 @@ footer {
     font-size: 1rem;
   }
 
-  .post-card {
-    flex-direction: column;
+  .post-img {
+    max-width: 100%;
   }
+  
 
 }
+

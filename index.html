@@ -3,18 +3,23 @@
   <head>
     <meta charset="utf-8">
     <title>MedX</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Poppins:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
     <nav>
       <ul>
-        <li class="nav-logo"> <a href="index.html"> <img src="icons/logo-nav.svg"> </a> </li>
-        <li class="nav-li"><a href="posts.html">Posts</a></li>
-        <li class="push-right nav-li"><a href="#">About</a></li>
-        <li class="nav-li"><a href="#">Contact</a></li>
+        <li class="nav-li nav-logo"> <a href="index.html"> <img src="icons/logo-nav.svg"> </a> </li>
+        <li class="nav-li">
+        	<a href="posts.html"><i class="fa fa-list-ul"></i> Posts</a>
+        </li>
+        <li class="push-right nav-li">
+        	<a href="#">
+        		<i class="fa fa-address-book"></i> 
+        		About
+        	</a>
+        </li>
+        <li class="nav-li"><a href="#"><i class="fa fa-envelope"></i> Contact</a></li>
       </ul>
     </nav>
 
@@ -23,6 +28,7 @@
       <div class="animated fadeInDown splash-text">
         <img class="splash-logo" src="icons/logo-full.svg">
         <h1>Medical Education for everyone.</h1>
+        <a href="posts.html"><button type="button" name="button" class="redirect-btn">Explore</button></a>
       </div>
     </section>
 
